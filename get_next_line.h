@@ -18,8 +18,16 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-# define BUFFER_SIZE 42
+#   define BUFFER_SIZE 42
 # endif
+
+/* gnl */
+
+char	*get_next_line(int fd)
+char    *fill_line_buffer(int fd, char *left_c, char *buffer)
+char    *set_line(char *line_buffer)
+
+/* utils */
 
 size_t	ft_strlen(const char *str)
 char	*ft_strchr(const char *s, int c)
