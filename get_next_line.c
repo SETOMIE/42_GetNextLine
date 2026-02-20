@@ -12,17 +12,18 @@
 
 #include "get_next_line.h"
 
+char    *read_storage(char *storage, int fd)
+
+char    *extract_line(char **storage);
+
 char	*get_next_line(int fd)
 {
+    static char *stash;
+    char        *temp;
+    int         i;
 
-}
+    if (fd < 0 || BUFFER_SIZE <= 0)
+        return (NULL);
 
-char    *fill_line_buffer(int fd, char *left_c, char *buffer)
-{
-
-}
-
-char    *set_line(char *line_buffer)
-{
-    
+        
 }
