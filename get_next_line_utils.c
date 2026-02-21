@@ -13,75 +13,76 @@
 # include "get_next_line.h"
 
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i])
+	size_t	i = 0;
+	while (s && s[i])
 		i++;
 	return (i);
 }
 
 char	*ft_strchr(const char *s, int c)
 {
-    size_t  i;
-
-    i = 0;
-	while (s[i] != '\0')
+    size_t  i = 0;
+	if (!s)
+		return (NULL);
+	while (s[i])
 	{
 		if (s[i] == (char)c)
-			return ((char *) &s[i]);
+			return ((char *)&s[i]);
 		i++;
 	}
-	if (c == '\0')
-		return ((char *) &s[i]);
+	if ((char)c == '\0')
+		return ((char *)&s[i]);
 	return (NULL);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
-	size_t	i;
+	size_t	i = 0;
+	size_t	j = 0;
 
-	if (s1 && s2 == NULL)
-		return (0);
-	str = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, sizeof(char));
+	if (!s1 || !s2)
+		return (NULL);
+	str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!str)
 		return (NULL);
-	i = 0;
-	while (*s1 != '\0')
+	while (s1[i])
 	{
-		str[i] = *s1[i];
+		str[i] = s1[i];
 		i++;
 	}
-    while (*s2 != '\0')
-    	str[i] = *s2[i];
+	while (s2[j])
+	{
+		str[i] = s2[j];
 		i++;
+		j++;
+	}
     str[i] = '\0';
 	return (str);
 }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
+	size_t	i = 0;
 	char	*str;
 
-	if (s == NULL)
-		return (0);
-	if (ft_strlen(s) < start)
-		len = 0;
-	if (ft_strlen(s + start) < len)
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s + start))
 		len = ft_strlen(s + start);
-	str = ft_calloc(len + 1, sizeof(char));
+	str = malloc(len + 1);
 	if (!str)
-		return (0);
-	i = 0;
+		return (NULL);
 	while (i < len)
 	{
 		str[i] = s[start + i];
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
 
@@ -89,13 +90,14 @@ char	*ft_strdup(const char *s)
 {
 	size_t	len;
 	char	*dup;
-	size_t	i;
+	size_t	i = 0;
 
+	if (!s)
+		return (NULL);
 	len = ft_strlen(s);
-	dup = (char *)malloc((len + 1) * (1 + 1));
+	dup = malloc(len + 1);
 	if (!dup)
-		return (0);
-	i = 0;
+		return (NULL);
 	while (i < len)
 	{
 		dup[i] = s[i];

@@ -14,7 +14,7 @@
 
 char    *read_storage(char *storage, int fd)
 
-char    *extract_line(char **storage);
+char    *extract_line(char **storage)
 
 char	*get_next_line(int fd)
 {
@@ -24,6 +24,8 @@ char	*get_next_line(int fd)
 
     if (fd < 0 || BUFFER_SIZE <= 0)
         return (NULL);
-
-        
+    storage = read_into_storage(fd, storage);
+    if (!storage)
+        return (NULL);
+    return (extract_line(&storage));
 }
