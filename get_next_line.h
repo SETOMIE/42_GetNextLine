@@ -23,16 +23,16 @@
 
 /* gnl */
 
+char    *read_storage(char *storage, int fd)
+char    *extract_line(char **storage)
 char	*get_next_line(int fd)
-char    *fill_line_buffer(int fd, char *left_c, char *buffer)
-char    *set_line(char *line_buffer)
 
 /* utils */
 
 size_t	ft_strlen(const char *str)
 char	*ft_strchr(const char *s, int c)
 char	*ft_strjoin(char const *s1, char const *s2)
-char	*ft_strdup(const char *s)
 char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strdup(const char *s)
 
 #endif
