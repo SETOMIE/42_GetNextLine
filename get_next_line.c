@@ -15,6 +15,7 @@
 char    *read_storage(char *storage, int fd)
 {
     char    *buffer;
+    char    *joined;
     ssize_t bytes_read;
 
     buffer = malloc(BUFFER_SIZE + 1);
@@ -23,15 +24,24 @@ char    *read_storage(char *storage, int fd)
     bytes_read = 1; //initialize loop entry.
     while (bytes_read > 0) //read until EFO or '\n'.
     {
-        if (ft_strchr(storage, '\n'))
+        if (storage && ft_strchr(storage, '\n'))
             break;
         bytes_read = read(fd, buffer, BUFFER_SIZE);
         if (bytes_read < 0)
         {
             free(buffer);
+            free(storage);
             return (NULL);
         }
-        storage = joined; //update storage with new joined string.
+        buffer[bytes_read] = '\0'; //null-terminate buffer.
+        joined = ft_strjoin(storage, buffer); //append new data to storage.
+        free(storage);
+        storage = joined;
+        if (!storage)
+        {
+            free(buffer);
+            return (NULL);
+        }
     }
     free(buffer); //free temp buffer.
     return (storage); //return updated storage w/ appended data.
