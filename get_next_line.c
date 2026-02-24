@@ -88,6 +88,11 @@ char	*get_next_line(int fd)
     if (!storage)
         return (NULL);
     line = extract_line(&storage);
+    if (storage && *storage == '\0')
+    {
+        free(storage);
+        storage = NULL;
+    }
     return (line);
 }
 

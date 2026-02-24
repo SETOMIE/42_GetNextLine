@@ -6,7 +6,7 @@
 get_next_line is 1/3 projects of Milestone One. The idea of GNL is to read and return the next line from a **File Descriptor**. Other than that, this project provides a good opportunity to strengthen your knowledge about variables (static and non-static), buffer handling, memory management and FD tables. :shipit:
 
 # Project Details
-**get_next_line.c** contains the main functions; 'read_storage', 'extract_line' and 'get_next_line'.
+**get_next_line.c** contains the main functions; *reda_storage*, *extract_line*, *get_next_line*.
 
 **get_next_line_utils** contains the  helper functions used in the main .C file. Since libft is not allowed in the scope of this project, I modified the helper functions to be applicable to GNL.
 
@@ -41,4 +41,4 @@ The resources used are a mix of articles from different websites and articles, a
 > Additionally, I learnt about the (forbidden) Ternary Operator and Inode table while researching into GNL.
 
 # Author
-Asyeo | 42 Kuala Lumpur
+asyeo | 42 Kuala Lumpur
