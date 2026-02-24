@@ -27,9 +27,10 @@ The resources used are a mix of articles from different websites and articles, a
 
 ### Articles
 
-[G4G Inodes](https://www.geeksforgeeks.org/operating-systems/inode-in-operating-system/)
-[EOF in C](https://www.geeksforgeeks.org/c/eof-and-feof-in-c/)
-[G4G Static Variables](https://www.geeksforgeeks.org/c/static-variables-in-c/)
+[G4G Inodes](https://www.geeksforgeeks.org/operating-systems/inode-in-operating-system/), 
+[EOF in C](https://www.geeksforgeeks.org/c/eof-and-feof-in-c/), 
+[G4G Static Variables](https://www.geeksforgeeks.org/c/static-variables-in-c/), 
+[Basics of Segfault](https://medium.com/@mohamedsamer1532/understanding-segmentation-fault-in-c-causes-and-solutions-ed3d1c159d76), [ Memory Layout in C](https://www.geeksforgeeks.org/c/memory-layout-of-c-program/)
 
 ### Guides
 
