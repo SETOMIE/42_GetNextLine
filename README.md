@@ -20,17 +20,21 @@ The resources used are a mix of articles from different websites and articles, a
 
 ### Videos
 
-[TechFairy's FD Explanation](https://youtu.be/saMebwRO-Q8?si=r8bBX1Q0D6uDE7uH)
-[TechFairy's FD Theory](https://youtu.be/bNzMz6rb_3Y?si=MIyA70t0zjsoAw5A)
-[Ariane's GNL Part 1 (Discontinued)](https://youtu.be/bNzMz6rb_3Y?si=MIyA70t0zjsoAw5A)
-[Oceano's GNL video](https://youtu.be/8E9siq7apUU?si=2ZFsi9oWdw24J-89)
+[TechFairy's FD Explanation](https://youtu.be/saMebwRO-Q8?si=r8bBX1Q0D6uDE7uH), 
+[TechFairy's FD Theory](https://youtu.be/bNzMz6rb_3Y?si=MIyA70t0zjsoAw5A), 
+[Ariane's GNL Part 1 (Discontinued)](https://youtu.be/bNzMz6rb_3Y?si=MIyA70t0zjsoAw5A), 
+[Oceano's GNL video](https://youtu.be/8E9siq7apUU?si=2ZFsi9oWdw24J-89), 
+[How Input Buffering works](https://www.youtube.com/watch?v=AD-iXWANggo), 
 
 ### Articles
 
 [G4G Inodes](https://www.geeksforgeeks.org/operating-systems/inode-in-operating-system/), 
 [EOF in C](https://www.geeksforgeeks.org/c/eof-and-feof-in-c/), 
 [G4G Static Variables](https://www.geeksforgeeks.org/c/static-variables-in-c/), 
-[Basics of Segfault](https://medium.com/@mohamedsamer1532/understanding-segmentation-fault-in-c-causes-and-solutions-ed3d1c159d76), [Memory Layout in C](https://www.geeksforgeeks.org/c/memory-layout-of-c-program/)
+[Basics of Segfault (lots of good examples)](https://medium.com/@mohamedsamer1532/understanding-segmentation-fault-in-c-causes-and-solutions-ed3d1c159d76), 
+[Memory Layout in C](https://www.geeksforgeeks.org/c/memory-layout-of-c-program/), 
+[Dynamic Memory allocation](https://www.geeksforgeeks.org/c/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/), 
+[Bascis of Buffers](https://medium.com/@sreehema2025/understanding-buffers-in-c-why-your-printf-might-not-show-up-immediately-98c4d9d60d75), 
 
 ### Guides
 

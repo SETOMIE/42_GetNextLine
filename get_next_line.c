@@ -12,6 +12,8 @@
 
 #include "get_next_line.h"
 
+#define BUFFER_SIZE 1024 
+
 char    *read_storage(char *storage, int fd)
 {
     char    *buffer;
