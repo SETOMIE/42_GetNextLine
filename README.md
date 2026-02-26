@@ -35,6 +35,9 @@ The resources used are a mix of articles from different websites and articles, a
 [Memory Layout in C](https://www.geeksforgeeks.org/c/memory-layout-of-c-program/), 
 [Dynamic Memory allocation](https://www.geeksforgeeks.org/c/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/), 
 [Bascis of Buffers](https://medium.com/@sreehema2025/understanding-buffers-in-c-why-your-printf-might-not-show-up-immediately-98c4d9d60d75), 
+[Buffers in C](https://www.geeksforgeeks.org/c/buffer-in-c-programming/), 
+[Stack Overflow Buffers](https://stackoverflow.com/questions/27993971/understanding-buffering-in-c), [Temporary Buffers](https://stackoverflow.com/questions/39690836/understanding-free-buffer-before-return-statement), 
+[Understanding Buffers](https://medium.com/@sreehema2025/understanding-buffers-in-c-why-your-printf-might-not-show-up-immediately-98c4d9d60d75)
 
 ### Guides
 
