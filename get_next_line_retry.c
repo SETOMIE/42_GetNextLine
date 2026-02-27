@@ -6,11 +6,13 @@
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/29 14:12:46 by asyeo             #+#    #+#             */
-/*   Updated: 2026/02/27 13:04:18 by asyeo            ###   ########.fr       */
+/*   Updated: 2026/02/27 13:21:37 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "get_next_line.h"
+
+# define BUFFER_SIZE 1024
 
 char	*ft_append_storage()
 char	*ft_read_line()
