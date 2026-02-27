@@ -38,7 +38,7 @@ The resources used are a mix of articles from different websites and articles, a
 [Buffers in C](https://www.geeksforgeeks.org/c/buffer-in-c-programming/), 
 [Stack Overflow Buffers](https://stackoverflow.com/questions/27993971/understanding-buffering-in-c), [Temporary Buffers](https://stackoverflow.com/questions/39690836/understanding-free-buffer-before-return-statement), 
 [Understanding Buffers](https://medium.com/@sreehema2025/understanding-buffers-in-c-why-your-printf-might-not-show-up-immediately-98c4d9d60d75),
-[Managing Input Buffer](https://labex.io/tutorials/c-how-to-manage-input-buffer-in-c-418766)
+[Managing Input Buffer](https://labex.io/tutorials/c-how-to-manage-input-buffer-in-c-418766), [Dynamic Memory Allocation](https://www.upgrad.com/tutorials/software-engineering/c-tutorial/dynamic-memory-allocation-in-c/), [Appending Strings](https://www.geeksforgeeks.org/c/how-to-append-a-character-to-a-string-in-c/)
 
 ### Guides
 
