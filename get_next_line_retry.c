@@ -14,7 +14,24 @@
 
 # define BUFFER_SIZE 1024
 
-char	*ft_append_storage()
+char	*ft_append_string(char **string, char *buffer, int bytes_read);
+{
+	if (! *string)
+	{
+		string = ft_strdup("");
+		if (! *string)
+			return (NULL);
+	}
+	if (bytes < 0)
+		return (NULL);
+	if (bytes > 0)
+	{
+				
+	}
+}
+
+
+
 char	*ft_read_line()
 char	*ft_extract_line()
 char	*ft_free_buffer()
