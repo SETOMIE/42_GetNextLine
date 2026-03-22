@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asyeo <asyeo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/22 05:09:36 by asyeo             #+#    #+#             */
-/*   Updated: 2026/03/22 15:44:11 by asyeo            ###   ########.fr       */
+/*   Updated: 2026/03/22 15:44:25 by asyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_get_line(char **prev)
 {
@@ -46,9 +46,9 @@ char	*get_next_line(ssize_t fd)
 	size_t		i;
 	ssize_t		bytes;
 	char		*buffer;
-	static char	*prev;
+	static char	*prev[MAX_FD];
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || fd >= MAX_FD || BUFFER_SIZE <= 0)
 		return (NULL);
 	buffer = malloc(BUFFER_SIZE + 1);
 	if (!buffer)
@@ -56,15 +56,15 @@ char	*get_next_line(ssize_t fd)
 	bytes = 1;
 	while (bytes)
 	{
-		i = 0;
-		while (prev && prev[i++])
-			if (prev[i] == '\n')
-				return (free(buffer), ft_get_line(&prev));
+		i = -1;
+		while (prev[fd] && prev[fd][++i])
+			if (prev[fd][i] == '\n')
+				return (free(buffer), ft_get_line(&prev[fd]));
 		bytes = read(fd, buffer, BUFFER_SIZE);
 		if (bytes < 0)
 			return (free(buffer), NULL);
 		buffer[bytes] = '\0';
-		prev = ft_strjoin_gnl(prev, buffer, bytes);
+		prev[fd] = ft_strjoin_gnl(prev[fd], buffer, bytes);
 	}
-	return (free(buffer), ft_get_line(&prev));
+	return (free(buffer), ft_get_line(&prev[fd]));
 }

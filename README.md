@@ -49,5 +49,6 @@ The resources used are a mix of articles from different websites and articles, a
 > I suffered, a lot. I lost a lot of hair and I still have terrible memory.
 > Additionally, I learnt about the (forbidden) Ternary Operator and Inode table while researching into GNL.
 
+
 # Author
 asyeo | 42 Kuala Lumpur
